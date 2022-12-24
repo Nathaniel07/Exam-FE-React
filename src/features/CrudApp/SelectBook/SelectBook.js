@@ -56,16 +56,7 @@ function SelectBook () {
                     document.getElementsByClassName('sent-message')[0].style.display = 'block';
                     document.getElementsByClassName('loading')[0].style.display = 'none';
                     document.getElementsByClassName('delete-question')[0].style.display = 'none';
-
-                    getData(id) // update the Title
-                    .then((response) => {
-                        if(response.status === 200){       
-                            document.getElementsByClassName('book-title')[0].innerHTML = response.data[0].book_title;
-                        }
-                    })
-                    .catch((error) => {
-                        console.error(error);
-                    });
+                    document.getElementsByClassName('book-title')[0].innerHTML = e.target.bookTitle.value;
                 }
             })
             .catch((error) => {
