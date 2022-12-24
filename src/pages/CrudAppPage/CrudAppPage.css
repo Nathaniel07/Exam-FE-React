@@ -1,0 +1,8 @@
+.crud-header {
+    display: flex;
+    align-items: center;
+}
+
+.add-button {
+    margin-left: auto;
+}

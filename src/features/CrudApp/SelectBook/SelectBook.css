@@ -1,0 +1,8 @@
+.delete-container {
+    display: flex;
+    align-items: center;
+}
+
+.delete-question {
+    display: none;
+}
