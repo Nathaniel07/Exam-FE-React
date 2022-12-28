@@ -47,21 +47,21 @@ function AddBook () {
                 <h2>Add a Book</h2>
                 <p><Link to="/crud-app" className="link-router"><i className="fa fa-angle-left" aria-hidden="true"></i>&nbsp;All Books</Link></p>
             </div>
-            <form className="book-form" onSubmit={submitBookForm}>
+            <form className="book-form" onSubmit={submitBookForm} onChange={() => updateVariable}>
                 <div className="form-row">
                     <div className="form-group col-md-6">
                     <label>Book Title</label>
-                    <input type="text" className="form-control" name="bookTitle" id="book-title" onChange={() => updateVariable()} required />
+                    <input type="text" className="form-control" name="bookTitle" id="book-title" required />
                     </div>
                     <div className="form-group col-md-6">
                     <label>Genre</label>
-                    <input type="text" className="form-control" name="genre" id="genre" onChange={() => updateVariable()} required />
+                    <input type="text" className="form-control" name="genre" id="genre" required />
                     </div>
                 </div>
                 <div className="form-row">
                     <div className="form-group col-md-6">
                     <label>Author</label>
-                    <input type="text" className="form-control" name="author" id="author" onChange={() => updateVariable()} required />
+                    <input type="text" className="form-control" name="author" id="author" required />
                     </div>
                 </div>
                 <div className="my-3">
